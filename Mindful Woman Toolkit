@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Mindful Woman's Toolkit – Taster Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #f5f0e8 0%, #fef8f5 100%);
+      font-family: Georgia, serif;
+      color: #2d4a3e;
+      line-height: 1.8;
+    }
+    .rejuvenation-landing {
+      padding: 40px 20px;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100vw;
+    }
+    .rejuvenation-landing .rej-container {
+      max-width: 900px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    .rejuvenation-landing .rej-header {
+      text-align: center;
+      margin-bottom: 50px;
+      padding: 40px 30px;
+      background: linear-gradient(135deg, #a8c9b8 0%, #8db5a0 100%);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .rejuvenation-landing .rej-price-badge {
+      display: inline-block;
+      background: #d97766;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(217,119,102,0.3);
+    }
+    .rejuvenation-landing h1,
+    .rejuvenation-landing h2,
+    .rejuvenation-landing h3,
+    .rejuvenation-landing h4 {
+      font-family: Georgia, serif;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .rejuvenation-landing h1 {
+      color: #fff;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    .rejuvenation-landing h2 {
+      color: #8db5a0;
+      font-size: 2em;
+    }
+    .rejuvenation-landing h3 {
+      color: #8db5a0;
+      font-size: 1.5em;
+    }
+    .rejuvenation-landing h4 {
+      color: #8db5a0;
+      font-size: 1.3em;
+    }
+    .rejuvenation-landing p {
+      color: #3d5a4d;
+      margin-bottom: 15px;
+      font-size: 1.05em;
+      line-height: 1.8;
+    }
+    .rejuvenation-landing .rej-subtitle {
+      color: #e8dcc8;
+      font-size: 1.3em;
+      font-style: italic;
+    }
+    .rejuvenation-landing .rej-tagline {
+      color: #fff;
+      font-size: 1.1em;
+      opacity: 0.95;
+      text-align: center;
+    }
+    .rejuvenation-landing .rej-image-placeholder {
+      display: flex;
+      background: linear-gradient(135deg, #f5f0e8 0%, #fff 100%);
+      border: 3px dashed #d97766;
+      border-radius: 15px;
+      padding: 60px 40px;
+      text-align: center;
+      margin: 40px 0;
+      min-height: 300px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .rejuvenation-landing .rej-image-icon {
+      font-size: 4em;
+      color: #d97766;
+      margin-bottom: 15px;
+      display: block;
+    }
+    .rejuvenation-landing .rej-quote-section {
+      background: linear-gradient(135deg, #f5f0e8 0%, #fef8f5 100%);
+      padding: 35px;
+      border-radius: 15px;
+      border-left: 5px solid #d97766;
+      font-style: italic;
+      color: #3d5a4d;
+      margin: 40px 0;
+      font-size: 1.15em;
+    }
+    .rejuvenation-landing .rej-quote-author {
+      font-weight: bold;
+      color: #d97766;
+      margin-top: 15px;
+      text-align: right;
+      font-style: normal;
+    }
+    .rejuvenation-landing .rej-content-section {
+      background: #fff;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+      border-top: 6px solid #d97766;
+    }
+    .rejuvenation-landing .rej-course-modules {
+      margin: 30px 0;
+    }
+    .rejuvenation-landing .rej-module {
+      background: linear-gradient(135deg, #f5f0e8 0%, #fff 100%);
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid #d97766;
+      margin-bottom: 20px;
+      transition: transform .3s ease;
+    }
+    .rejuvenation-landing .rej-module:hover {
+      transform: translateX(5px);
+    }
+    .rejuvenation-landing .rej-module-number {
+      background: #d97766;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .rejuvenation-landing ul {
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #5a7a6d;
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .rejuvenation-landing li {
+      margin-bottom: 8px;
+      color: #5a7a6d;
+    }
+    .rejuvenation-landing .rej-bio-section {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+      border-left: 6px solid #d97766;
+    }
+    .rejuven
