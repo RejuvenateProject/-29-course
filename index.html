@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Mindful Woman's Toolkit – Taster Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #f5f0e8 0%, #fef8f5 100%);
+      font-family: Georgia, serif;
+      color: #2d4a3e;
+      line-height: 1.8;
+    }
+    .rejuvenation-landing {
+      padding: 40px 20px;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100vw;
+    }
+    .rej-container {
+      max-width: 900px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 32px;
+    }
+    .rej-header {
+      text-align: center;
+      margin-bottom: 44px;
+      padding: 36px 28px;
+      background: linear-gradient(135deg, #a8c9b8 0%, #8db5a0 100%);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+    .rej-price-badge {
+      display: inline-block;
+      background: #d97766;
+      color: #fff;
+      padding: 8px 22px;
+      border-radius: 28px;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 12px rgba(217,119,102,0.18);
+    }
+    .rej-header h1 {
+      color: #fff;
+      font-size: 2.3em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.16);
+      font-weight: bold;
+      margin-top: 18px;
+      margin-bottom: 14px;
+    }
+    .rej-subtitle {
+      color: #e8dcc8;
+      font-size: 1.2em;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    .rej-tagline {
+      color: #fff;
+      font-size: 1.08em;
+      opacity: 0.97;
+      letter-spacing: 0.3px;
+    }
+    .rej-image-hero {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 42px 0 36px 0;
+    }
+    .rej-image-hero img {
+      width: 100%;
+      max-width: 440px;
+      border-radius: 14px;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.08);
+      border: 2px solid #d97766;
+      object-fit: cover;
+      background: #f8f4f1;
+    }
+    .rej-quote-section {
+      background: linear-gradient(135deg, #f5f0e8 0%, #fef8f5 100%);
+      padding: 30px 26px;
+      border-radius: 14px;
+      border-left: 5px solid #d97766;
+      font-style: italic;
+      color: #3d5a4d;
+      margin: 32px 0;
+      font-size: 1.15em;
+      position: relative;
+    }
+    .rej-quote-author {
+      font-weight: bold;
+      color: #d97766;
+      margin-top: 13px;
+      text-align: right;
+      font-style: normal;
+      font-size: 1em;
+      letter-spacing: 0.2px;
+    }
+    .rej-content-section {
+      background: #fff;
+      padding: 40px 0 10px 0;
+      margin-bottom: 36px;
+      border-top: 5px solid #d97766;
+    }
+    .rej-content-section h2 {
+      color: #8db5a0;
+      font-size: 1.7em;
+      margin-bottom: 19px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .rej-course-modules {
+      margin: 25px 0;
+    }
+    .rej-module {
+      background: linear-gradient(135deg, #f5f0e8 0%, #fff 100%);
+      padding: 21px 18px;
+      border-radius: 10px;
+      border-left: 4px solid #d97766;
+      margin-bottom: 18px;
+      transition: box-shadow .3s;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+    .rej-module-number {
+      background: #d97766;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 8px;
+      display: inline-block;
+      letter-spacing: 0.5px;
+    }
+    .rej-module h4 {
+      color: #8db5a0;
+      font-size: 1.08em;
+      font-weight: bold;
+      margin-bottom: 9px;
+      margin-top: 8px;
+    }
+    .rej-module ul {
+      color: #5a7a6d;
+      margin-top: 8px;
+      margin-left: 22px;
+      font-size: 1em;
+      padding-left: 17px;
+    }
+    .rej-module li {
+      margin-bottom: 8px;
+      color: #5a7a6d;
+    }
+    .rej-module p {
+      color: #3d5a4d;
+      font-size: 1em;
+      margin-bottom: 9px;
+    }
+    .rej-pay-btn {
+      display: inline-block;
+      margin: 34px auto 18px auto;
+      padding: 17px 40px;
+      background: linear-gradient(135deg, #d97766 0%, #b07465 100%);
+      color: #fff;
+      border-radius: 44px;
+      text-decoration: none;
+      font-size: 1.2em;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+      box-shadow: 0 4px 24px rgba(217,119,102,0.12);
+      border: none;
+      transition: background 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+    .rej-pay-btn:hover, .rej-pay-btn:focus {
+      background: linear-gradient(135deg, #ae5942 0%, #d97766 100%);
+      box-shadow: 0 8px 32px rgba(175,90,66,0.13);
+    }
+    .rej-benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin: 38px 0;
+    }
+    .rej-benefit-card {
+      background: #f8f4ef;
+      padding: 24px 14px 14px 14px;
+      border-radius: 13px;
+      text-align: center;
+      border-top: 4px solid #d97766;
+      font-size: 1.03em;
+      min-height: 120px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .rej-benefit-card h4 {
+      color: #8db5a0;
+      font-size: 1.08em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .rej-benefit-card p {
+      color: #5a7a6d;
+    }
+    .rej-bio-section {
+      background: #fff;
+      padding: 32px 18px;
+      border-radius: 20px;
+      box-shadow: 0 10px 36px rgba(0,0,0,0.06);
+      margin-bottom: 38px;
+      border-left: 5px solid #d97766;
+    }
+    .rej-bio-section h2 {
+      color: #8db5a0;
+      font-size: 1.3em;
+      margin-bottom: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .rej-testimonial-box {
+      background: linear-gradient(135deg, #f5f0e8 0%, #fef8f5 100%);
+      padding: 20px 14px;
+      border-radius: 10px;
+      margin: 20px 0;
+      border-left: 4px solid #d97766;
+      font-style: italic;
+      font-size: 0.97em;
+    }
+    .rej-testimonial-author {
+      color: #d97766;
+      font-weight: bold;
+      text-align: right;
+      margin-top: 10px;
+      font-style: normal;
+      font-size: 0.97em;
+    }
+    .rej-cohort-section {
+      background: #fff;
+      padding: 32px 14px;
+      border-radius: 20px;
+      box-shadow: 0 10px 36px rgba(0,0,0,0.04);
+      margin-bottom: 38px;
+      border-top: 5px solid #8db5a0;
+    }
+    .rej-cohort-section h2 {
+      color: #8db5a0;
+      font-size: 1.35em;
+      margin-bottom: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .rej-cohort-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 22px;
+      margin: 26px 0;
+    }
+    .rej-cohort-card {
+      background: linear-gradient(135deg, #f5f0e8 0%, #fef8f5 100%);
+      padding: 25px;
+      border-radius: 14px;
+      text-align: center;
+      border-left: 4px solid #d97766;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    }
+    .rej-cohort-label {
+      display: inline-block;
+      background: #d97766;
+      color: #fff;
+      padding: 7px 19px;
+      border-radius: 18px;
+      font-weight: bold;
+      margin-bottom: 14px;
+      font-size: 1em;
+      letter-spacing: 0.3px;
+    }
+    .rej-cohort-time {
+      color: #d97766;
+      font-size: 1.13em;
+      font-weight: bold;
+      margin-top: 8px;
+      display: block;
+    }
+    .rej-prize-section {
+      background: linear-gradient(135deg, #f5f0e8 0%, #fef8f5 100%);
+      padding: 32px 10px;
+      border-radius: 17px;
+      text-align: center;
+      margin-bottom: 36px;
+      border: 3px solid #d97766;
+      box-shadow: 0 8px 30px rgba(217,119,102,0.10);
+    }
+    .rej-prize-section h3 {
+      color: #d97766;
+      font-size: 1.35em;
+      font-weight: bold;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+    .rej-book-title {
+      font-style: italic;
+      font-weight: bold;
+      color: #8db5a0;
+      font-size: 1.16em;
+      margin-top: 12px;
+      display: block;
+    }
+    .rej-cta-section {
+      text-align: center;
+      padding: 38px 8px 16px 8px;
+      background: linear-gradient(135deg, #a8c9b8 0%, #8db5a0 100%);
+      border-radius: 18px;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.07);
+      margin-bottom: 12px;
+    }
+    .rej-cta-section h3 {
+      color: #fff;
+      font-size: 1.22em;
+      margin-bottom: 13px;
+      font-weight: bold;
+    }
+    .rej-cta-section p {
+      color: #fff;
+      font-size: 1.1em;
+      margin-bottom: 0;
+      opacity: 0.96;
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .rej-container {
+        padding: 12px;
+      }
+      .rej-content-section,
+      .rej-bio-section,
+      .rej-cohort-section {
+        padding: 20px 4px;
+      }
+      .rej-header {
+        padding: 22px 7px;
+      }
+      .rej-image-hero img {
+        max-width: 98vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rejuvenation-landing">
+    <div class="rej-container">
+      <header class="rej-header">
+        <div class="rej-price-badge">Only $29</div>
+        <h1>The Mindful Woman's Toolkit</h1>
+        <p class="rej-subtitle">Taster Course: Navigate Perimenopause &amp; Menopause with Confidence</p>
+        <p class="rej-tagline">Evidence-based mindfulness tools for emotional balance and hormonal support</p>
+      </header>
+
+      <div class="rej-image-hero">
+        <!-- Replace the src below with your own image hosted on GitHub or elsewhere -->
+        <img src="https://placehold.co/440x300/e8dcc8/8db5a0?text=Your+Photo+Here" alt="Angie Wood or Course Hero Image">
+      </div>
+
+      <div class="rej-quote-section">
+        <div>
+          Perimenopause and menopause can feel overwhelming, but you are not failing. With the right tools and support, you can feel calm, clear, and in control. This masterclass gives you practical techniques to bridge what's happening in your body and your mind, so you can move forward with confidence.
+        </div>
+        <div class="rej-quote-author">— Angie Wood</div>
+      </div>
+
+      <div class="rej-content-section">
+        <h2>What You'll Experience in This Taster Course</h2>
+        <p>This self-contained module mirrors the proven 4-step format of our full 6-week program, giving you a genuine sample of the transformative learning experience that awaits you.</p>
+
+        <div class="rej-course-modules">
+          <div class="rej-module">
+            <span class="rej-module-number">Step 1</span>
+            <h4>The Expert Insight: The Window of Tolerance</h4>
+            <p>Discover Dr. Dan Siegel's powerful framework for understanding your nervous system. Learn about the three states that govern your daily emotional and physiological responses:</p>
+            <ul>
+              <li><strong>The Optimal Window:</strong> Calm, alert, and engaged</li>
+              <li><strong>Hyper-arousal:</strong> Fight-or-flight, anxiety, overwhelm</li>
+              <li><strong>Hypo-arousal:</strong> Freeze, shutdown, numbness</li>
+            </ul>
+            <p>This simple yet profound language helps you understand and navigate stress with greater awareness.</p>
+          </div>
+
+          <div class="rej-module">
+            <span class="rej-module-number">Step 2</span>
+            <h4>The Reflection: Mapping Your Window</h4>
+            <p>Move from theory to practical self-awareness with guided reflection activities. You'll explore:</p>
+            <ul>
+              <li>How you respond to recent stressful events</li>
+              <li>Your personal early warning signs (shallow breathing, tight shoulders, racing thoughts)</li>
+              <li>Patterns of hyper-arousal (anger, panic) or hypo-arousal (feeling zoned out, numb)</li>
+            </ul>
+            <p>This personalized insight helps you recognize when you're nearing the edge of your window.</p>
+          </div>
+
+          <div class="rej-module">
+            <span class="rej-module-number">Step 3</span>
+            <h4>Mindfulness Practice: The 3-Minute Breathing Space</h4>
+            <p>Experience a guided mindfulness exercise that is a cornerstone of stress reduction. This simple, memorable, and effective tool:</p>
+            <ul>
+              <li>Supports widening your Window of Tolerance</li>
+              <li>Can be used immediately in daily life</li>
+              <li>Provides instant grounding during moments of stress</li>
+            </ul>
+            <p>Take this powerful practice with you beyond the course.</p>
+          </div>
+
+          <div class="rej-module">
+            <span class="rej-module-number">Step 4</span>
+            <h4>Join the Woman's Circle for Discussion</h4>
+            <p>Experience the power of community support in a safe, moderated online session where you can:</p>
+            <ul>
+              <li>Voluntarily share your reflections on the Window of Tolerance</li>
+              <li>Connect with other women on similar journeys</li>
+              <li>Feel the support and understanding that is central to our full program</li>
+            </ul>
+            <p>This is your taste of the transformative community that awaits you.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;">
+        <!-- REPLACE the link below with your live Stripe Checkout link -->
+        <a class="rej-pay-btn" href="https://buy.stripe.com/test_aBc123XYZ" target="_blank" rel="noopener">Pay $29 Securely</a>
+      </div>
+
+      <div class="rej-benefits-grid">
+        <div class="rej-benefit-card">
+          <h4>Science-Backed</h4>
+          <p>Evidence-based approaches combining neuroscience and mindfulness</p>
+        </div>
+        <div class="rej-benefit-card">
+          <h4>Practical Tools</h4>
+          <p>Techniques you can use immediately in your daily life</p>
+        </div>
+        <div class="rej-benefit-card">
+          <h4>Supportive Community</h4>
+          <p>Connect with women who truly understand your journey</p>
+        </div>
+      </div>
+
+      <div class="rej-bio-section">
+        <h2>Meet Your Guide: Angie Wood</h2>
+        <p>Angie Wood is a certified Mindfulness Teacher (Mindfulness Works Australia) and founder of The Rejuvenation Project. Drawing on extensive research, careful curation of evidence, and consultation with experts, Angie created The Mindful Woman's Toolkit to meet the need for credible and compassionate support for menopause and perimenopause.</p>
+
+        <p>Her programs uniquely blend medical insights, neuroscience, and mindfulness. They empower women to feel emotionally grounded and physically supported at every stage. In this taster course, Angie guides you through practical, evidence-based tools you can use right away. These strategies help you become more centred, more present, and more capable, whatever your hormones are doing.</p>
+
+        <p>Do not miss your opportunity to learn directly from Angie and experience truly supportive wellbeing guidance.</p>
+
+        <div class="rej-testimonial-box">
+          <p>"Angie has a calm and reassuring approach to meditation and her immediate ability to connect with me put me at ease."</p>
+          <div class="rej-testimonial-author">— Client Testimonial, November 2024</div>
+        </div>
+
+        <div class="rej-testimonial-box">
+          <p>"I really enjoyed my meditation session with Angie. I liked the different types of meditation and how they progressed throughout the session. I felt a lot more relaxed afterwards."</p>
+          <div class="rej-testimonial-author">— Jaya</div>
+        </div>
+      </div>
+
+      <div class="rej-cohort-section">
+        <h2>Choose Your Cohort</h2>
+        <p style="text-align: center; margin-bottom: 22px; color: #3d5a4d;">Select the session time that works best for you:</p>
+        <div class="rej-cohort-grid">
+          <div class="rej-cohort-card">
+            <div class="rej-cohort-label">Cohort 1</div>
+            <h4>Thursday, November 6</h4>
+            <p class="rej-cohort-time">7:00pm - 8:00pm</p>
+          </div>
+          <div class="rej-cohort-card">
+            <div class="rej-cohort-label">Cohort 2</div>
+            <h4>Saturday, November 8</h4>
+            <p class="rej-cohort-time">10:00am - 11:00am</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rej-prize-section">
+        <h3>Bonus: Win a Copy of Naomi Watts' Book!</h3>
+        <p><strong>Sign up today and go in the draw to win</strong> one of 3 copies of Naomi Watts' new book:</p>
+        <p class="rej-book-title">"Dare I Say It: Everything I Wish I'd Known About Menopause"</p>
+      </div>
+
+      <div class="rej-cta-section">
+        <h3>Start Your Journey Today</h3>
+        <p>Find calm and clarity backed by science. Mindfulness helps women navigate perimenopause and menopause with strength, grace, and renewed confidence.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
